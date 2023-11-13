@@ -1,11 +1,11 @@
 <template>
   <div>
     <p>{{ counter }}</p>
-    <button>+</button>
-    <button>-</button>
+    <button @click="inc">+</button>
+    <button @click="dec">-</button>
     <button>Reset</button>
   </div>
 </template>
-<script setup>
-  const counter = useCounterState()
+<script setup lang="ts">
+  const {counter, inc, dec} = useCounterState()
 </script>
