@@ -7,5 +7,5 @@
   </div>
 </template>
 <script setup>
-  const counter = useCountState()
+  const counter = useCounterState()
 </script>
