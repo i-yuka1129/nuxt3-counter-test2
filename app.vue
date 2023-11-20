@@ -3,9 +3,9 @@
     <p>{{ counter }}</p>
     <button @click="inc">+</button>
     <button @click="dec">-</button>
-    <button>Reset</button>
+    <button @click="reset">Reset</button>
   </div>
 </template>
 <script setup lang="ts">
-  const {counter, inc, dec} = useCounterState()
+  const {counter, inc, dec, reset} = useCounterState()
 </script>
